@@ -1,6 +1,8 @@
 // 1651682525
 // moment-with-locales library is popular 
 
+console.log(new Date(Date.now()).toISOString().replace("T"," ").slice(0,19))
+
 const unixTimestamp = 1651682525 * 1e3  // * 1k so timestamp in seconds to milliseconds
 
 const dateObject = new Date(unixTimestamp);  // js take timestamp in milliseconds
@@ -22,7 +24,6 @@ console.log(new Date(unixTimestamp).toLocaleTimeString("en-GB", options));  //We
 var options = { year: 'numeric', month: 'numeric', day: 'numeric' };
 console.log(new Date(unixTimestamp).toLocaleString("en-GB", options));  // 04/05/2022
 console.log();
-
 
 
 console.log("Date.now()");
