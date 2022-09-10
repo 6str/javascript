@@ -12,4 +12,6 @@ async function run() {
     }
 }
 
-run();
+await run();
+
+console.log("finished")
