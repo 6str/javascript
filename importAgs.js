@@ -1,5 +1,5 @@
 //type import { arguments } from "../arguments.js";
-const constructorArgs = require('../constructorArgs');
+const constructorArgs = require('../constructorArgs');  
 console.log(constructorArgs);
 
 // even though the literal string outputs looks wrong 

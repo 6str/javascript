@@ -23,7 +23,7 @@ const NETWORKS_LOOKUP_too = new Map([
 ]);
 
 // two exports to demonstrate that it's module.export object that is exported and why 
-//destructuring is used/necessary require, even if only exporting/requiring one object/var
+//destructuring is used/necessary with require, even if only exporting/requiring one object/var
 
 module.exports = {
     NETWORKS_LOOKUP,
