@@ -12,6 +12,23 @@
 // ES6 introduced arrow function expression that provides a shorthand for declaring anonymous functions:
 
 
+// These 3 are all, in essence, are accomplishing pretty much the same task, yet there are 
+// important differences between the three, such as the first one being hoisted,
+// and the last one having a different way to handle the this keyword.
+function hello() {
+   console.log("Hello world!")
+}
+
+const hi = function() {
+   console.log("Hi there!")
+}
+
+const hey = () => {
+   console.log("Hey, you!")
+}
+
+
+
 
 function doThing1a() { 
     return "doThing1a";
