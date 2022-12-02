@@ -1,3 +1,5 @@
+const { stderr } = require("process")
+
 // 1651682525
 // moment-with-locales library is popular 
 
@@ -6,6 +8,8 @@ console.log(new Date(Date.now()).toISOString().replace("T"," ").slice(0,19))
 const unixTimestamp = 1651682525 * 1e3  // * 1k so timestamp in seconds to milliseconds
 
 const dateObject = new Date(unixTimestamp);  // js take timestamp in milliseconds
+
+console.log(dateObject.toDateString())  // Wed May 04 2022
 console.log(dateObject.toString());  // Wed May 04 2022 17:42:05 GMT+0100 (British Summer Time)
 console.log(dateObject.toLocaleString()); // 04/05/2022, 17:42:05
 console.log(dateObject.toLocaleDateString()); // 04/05/2022
