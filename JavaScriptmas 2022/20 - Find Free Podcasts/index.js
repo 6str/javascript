@@ -1,5 +1,3 @@
-//https://scrimba.com/scrim/cod844b0db70bb416b5510b4d
-
 //import podcasts from "./data.js";
 const podcasts = require("./data.js")
 /* Find Free Podcasts 
