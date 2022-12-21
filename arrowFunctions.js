@@ -27,7 +27,17 @@ const hey = () => {
    console.log("Hey, you!")
 }
 
+// IIFE - Immediately Invoked Function Expression
+// many variations  
+// https://developer.mozilla.org/en-US/docs/Glossary/IIFE
+const iffy1 = (() => 'IFFE 1')();
 
+const iffy2 = (() => {
+   return 'IFFE 2'
+})();
+
+console.log("iffy 1:", iffy1)
+console.log("iffy 2:", iffy2)
 
 
 function doThing1a() { 
@@ -38,12 +48,12 @@ function doThing1a() {
  doThing1b = () => {
    return "doThing1b";  //similar to 1a but don't need return for one liner
 };
- doThing1c = () => "doThing1c";   // 1 liner, return is implicit and don't need braces {}
+ doThing1c = () => "doThing1c";   // 1 liner, no args need parentheses, return is implicit and don't need braces {}
  doThing1d = () => 1 * 10;   // 1 line return is implicit
- doThing1e = arg => arg * 10;   // 1 arg don't even need parentheses around the arg
- doThing1f = (arg) => arg * 10;   // 1 arg don't need parentheses around the arg, but it is allowed? possibly required in Solidity
- doThing1g = (arg1, arg2) => arg1 * arg2; // multiple args you need the parentheses again
- doThing1h = arg => {         // muliple lines you need the braces {} and the return statement
+ doThing1e = arg => arg * 10;   // 1 arg don't need parentheses around the arg
+ doThing1f = (arg) => arg * 10;   // 1 arg don't need parentheses around the arg, but it is allowed
+ doThing1g = (arg1, arg2) => arg1 * arg2; // multiple args you need the parentheses
+ doThing1h = arg => {         // muliple lines you need the braces {} and the explicit return statement
     var tmp = arg * 11;
     return tmp - arg;
  }
