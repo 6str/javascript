@@ -1,5 +1,5 @@
 challenge code mostly in index.js or main.js (usually with jasmine tests)
-
+easiest to use the scrim link to view on scrimba
 
 
 
