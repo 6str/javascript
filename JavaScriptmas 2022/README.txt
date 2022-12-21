@@ -1,6 +1,8 @@
 challenge code mostly in index.js or main.js (usually with jasmine tests)
 easiest to use the scrim link to view on scrimba
 
+pretty straight forward challenges but good practice using common methods and patterns, and was always great looking a few other Scrimbists' solutions. Generally picked up something useful.
+
 
 
 21 - 💻 Definitely Not FizzBuzz
