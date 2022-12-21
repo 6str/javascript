@@ -1,4 +1,5 @@
-challenge code in index.js or main.js (usually with jasmine tests)
+challenge code mostly in index.js or main.js (usually with jasmine tests)
+
 
 
 
