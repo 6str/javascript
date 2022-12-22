@@ -1,8 +1,15 @@
 challenge code mostly in index.js or main.js (usually with jasmine tests)
 easiest to use the scrim link to view on scrimba
 
-pretty straight forward challenges but good practice using common methods and patterns, and was always great looking a few other Scrimbists' solutions. Generally picked up something useful.
+although the challenges are pretty straight forward they're good for practicing use of common methods and patterns, 
+and it's always great looking at solutions from other Scrimbists. Often pick up something useful.
 
+
+
+22 - 🍴 Ready Tables
+	https://scrimba.com/scrim/coe9b4691b26c4e74d3e5b2e0
+	html from array of elements
+	html from addition assignment
 
 
 21 - 💻 Definitely Not FizzBuzz
