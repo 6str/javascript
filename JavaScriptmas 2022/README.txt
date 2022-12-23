@@ -6,6 +6,16 @@ and it's always great looking at solutions from other Scrimbists. Often pick up 
 
 
 
+
+
+23 - 🎁 Holiday Gift Shopping
+	https://scrimba.com/scrim/coe674ca48628bef14a1ff2ab
+	array sort() numbers
+	IIFE
+	ternary operator
+	map() to generate html
+
+
 22 - 🍴 Ready Tables
 	https://scrimba.com/scrim/coe9b4691b26c4e74d3e5b2e0
 	html from array of elements

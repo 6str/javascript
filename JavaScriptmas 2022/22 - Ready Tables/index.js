@@ -33,7 +33,7 @@ tablesSection.innerHTML = displayTables(getReadyTables())
 
 //displayTablesA(getReadyTables())
 
-/* Challenge 3: Ready Tables
+/* Challenge 22: Ready Tables
 - Topic: Return a Function
 Our restaurant has 20 tables and the staff serves 
 2 tables at a time. They need to know which tables 
