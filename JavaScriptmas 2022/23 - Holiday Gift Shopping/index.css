@@ -1,0 +1,28 @@
+
+header {
+    color: darkred;
+    text-align: center;
+}
+
+body {
+    background: green;
+    font-size: 20px;
+}
+
+.prodContainer {
+    background: pink;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    border: 2px solid darkred;
+    border-radius: 10px;
+}
+
+.prodContainer p {
+    margin: 20px;
+}
+
+.products {
+    font-size: 40px;
+}
