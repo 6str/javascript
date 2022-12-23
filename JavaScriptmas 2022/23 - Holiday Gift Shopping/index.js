@@ -22,15 +22,19 @@ function sortProducts(data){
 }
 
 const listByCheapest = sortProducts(products);
-listByCheapest.map(e => console.log(e.product, e.price));
+listByCheapest.forEach(e => console.log(e.product, e.price));
 
 
 (() => {
     const tags = listByCheapest.map(product => {
         return `
             <div class="prodContainer">
-                <p class="products">${product.product}</p>
-                <p>${product.price ? '£' + product.price : 'free!!!'}</p>
+                <div class="icon">
+                    <p class="product">${product.product}</p>
+                </div>
+                <div class="price">
+                    <p>${product.price ? '£' + product.price : 'free!!!'}</p>
+                </div>
             </div>
         `
     })

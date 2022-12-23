@@ -1,28 +1,49 @@
 
 header {
-    color: darkred;
+    font-family: 'Mountains of Christmas';font-size: 22px;
+    color: #e6001a;
+    font-size: 36px;
+    font-stretch:extra-expanded;
     text-align: center;
+    animation: jingle 1.5s ease;
+    animation-iteration-count: infinite;
 }
 
 body {
     background: green;
-    font-size: 20px;
 }
 
 .prodContainer {
-    background: pink;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 10px;
-    border: 2px solid darkred;
+    background-color: #8AE6A3;
     border-radius: 10px;
+    border: 2px solid darkgreen;
 }
 
 .prodContainer p {
-    margin: 20px;
+    margin: 30px;
+    
 }
 
-.products {
+.icon {
     font-size: 40px;
+    background-color: #99FF99;
+    border-radius: 10px 0px 0px 10px;
+    border-right: 1px solid silver;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+@keyframes jingle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
 }

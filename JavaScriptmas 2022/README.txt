@@ -13,6 +13,7 @@ and it's always great looking at solutions from other Scrimbists. Often pick up 
 	array sort() numbers
 	IIFE
 	ternary operator
+	forEach()
 	map() to generate html
 
 
@@ -33,6 +34,7 @@ and it's always great looking at solutions from other Scrimbists. Often pick up 
 	https://scrimba.com/scrim/cod844b0db70bb416b5510b4d
 	filter()
 	map()
+	forEach()
 	destructuring
 	spread operator
 	HTML
@@ -59,7 +61,7 @@ and it's always great looking at solutions from other Scrimbists. Often pick up 
 	recursion
 	flat()
 	concat()
-	map()
+	forEach()
 
 
 16 - 🤖 Insert Dashes

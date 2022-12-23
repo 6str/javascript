@@ -1,5 +1,5 @@
-//import podcasts from "./data.js";
-const podcasts = require("./data.js")
+import podcasts from "./data.js";
+
 /* Find Free Podcasts 
 
 We have a list of podcasts and need the ability to filter by only
@@ -48,7 +48,7 @@ function getFreePodcastsD(data){
 
 function showPodcasts(podcasts) {
     // const pods = getFreePodcasts(podcasts)
-    podcasts.map(podcast => {
+    podcasts.forEach(podcast => {
         const txt = `${podcast.title}:${podcast.rating}`
         console.log(txt)
         const pTag = document.createElement("p")        
@@ -61,4 +61,4 @@ console.log(getFreePodcastsA(podcasts))
 console.log(getFreePodcastsB(podcasts))
 console.log(getFreePodcastsC(podcasts))
 console.log(getFreePodcastsD(podcasts))
-// showPodcasts(getFreePodcastsA(podcasts))
+showPodcasts(getFreePodcastsA(podcasts))

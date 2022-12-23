@@ -36,7 +36,7 @@ function flattenConcat(arr) {
     
     let flatArray = [];
 
-    arr.map(element => flatArray = flatArray.concat(element))
+    arr.forEach(element => flatArray = flatArray.concat(element))
 
     return flatArray
 }
@@ -46,7 +46,7 @@ function flattenRecurse(arr) {
     
     let flatArray = [];
     
-    arr.map(element =>
+    arr.forEach(element =>
         Array.isArray(element) ?
             flatArray = flatArray.concat(flattenRecurse(element)) :
             flatArray.push(element)
