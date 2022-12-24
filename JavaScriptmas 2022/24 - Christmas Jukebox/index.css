@@ -1,0 +1,73 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0F0F0F;
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    color: #DEEAEE;
+    text-align: center;
+}
+
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+#player {
+  background-color: #DEEAEE;
+}
+
+button {
+    font-family: 'Inter', sans-serif;
+    background-color: #BDD59B;
+    border: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.btn:active {
+  box-shadow: -1px 1px rgb(78, 77, 77);
+  transform: translateY(2px);
+}
+
+
+button:hover {
+    background-color: #FF9492;
+    cursor: pointer;
+}
+
+button:focus {
+    border: none;
+    outline: none;
+}
+
+.songs {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 10px;
+}
+
+.nowPlaying {
+    background: red;
+    color: #fff;
+    font-weight: bold;
+    animation: wibble 2.25s ease;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes wibble {
+	0% { transform: scale(1) translateY(0); }
+	10% { transform: scale(1.01, 0.99); }
+	30% { transform: scale(0.99, 1.01) translateY(0px); }
+	50% { transform: scale(1) translateY(0); }
+	100% { transform: translateY(0); }
+}

@@ -5,7 +5,13 @@ although the challenges are pretty straight forward they're good for practicing 
 and it's always great looking at solutions from other Scrimbists. Often pick up something useful.
 
 
-
+24 - 🎶 Christmas Jukebox
+	https://scrimba.com/scrim/co0674357b1632eb0714697be
+	youtube embedding
+	optional chaining
+	querySelector
+	classList add/remove
+	css animation
 
 
 23 - 🎁 Holiday Gift Shopping
@@ -15,7 +21,8 @@ and it's always great looking at solutions from other Scrimbists. Often pick up 
 	ternary operator
 	forEach()
 	map() to generate html
-
+	css animation
+	
 
 22 - 🍴 Ready Tables
 	https://scrimba.com/scrim/coe9b4691b26c4e74d3e5b2e0
