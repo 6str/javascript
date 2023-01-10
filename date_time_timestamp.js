@@ -22,10 +22,10 @@ console.log(new Date(unixTimestamp).toLocaleTimeString("en-GB"));  // 17:42:05
 console.log();
 
 console.log("toLocaleDateString with options");
-var options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
+let options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
 console.log(new Date(unixTimestamp).toLocaleDateString("en-GB", options)); //Wednesday, 4 May 2022
 console.log(new Date(unixTimestamp).toLocaleTimeString("en-GB", options));  //Wednesday, 4 May 2022, 17:42:05
-var options = { year: 'numeric', month: 'numeric', day: 'numeric' };
+options = { year: 'numeric', month: 'numeric', day: 'numeric' };
 console.log(new Date(unixTimestamp).toLocaleString("en-GB", options));  // 04/05/2022
 console.log();
 

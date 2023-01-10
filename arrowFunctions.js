@@ -54,13 +54,13 @@ function doThing1a() {
  doThing1f = (arg) => arg * 10;   // 1 arg don't need parentheses around the arg, but it is allowed
  doThing1g = (arg1, arg2) => arg1 * arg2; // multiple args you need the parentheses
  doThing1h = arg => {         // muliple lines you need the braces {} and the explicit return statement
-    var tmp = arg * 11;
+    let tmp = arg * 11;
     return tmp - arg;
  }
 
  
  arg => arg * 10;  // anonymous function. An anonymous function is not accessible after its initial creation. Therefore, you often need to assign it to a variable. 
- let doThing1x = (arg) => arg * 10;   // which makes it look much like a named function but the variable can be re-assigned
+ const doThing1x = (arg) => arg * 10;   // which makes it look much like a named function
 
 // In practice, you often pass anonymous functions as arguments to other functions. For example:
 // In this example, we pass an anonymous function into the setTimeout() function. setTimeout takes a function as an argument
@@ -79,9 +79,5 @@ function doThing1a() {
  console.log("doThing1g : " + doThing1g(4, 10));
  console.log("doThing1h : " + doThing1h(5));
  console.log("doThing1x : " + doThing1x(6));
- doThing1x = 1000;    // reassign the function variable
- console.log("doThing1x after function variable reassiged : " + doThing1x);
  
- // Advanced syntax
- // To return an object literal expression requires parentheses around expression:
- console.log(params => ({foo: "a"})) // returning the object {foo: "a"}
+
