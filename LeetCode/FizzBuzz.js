@@ -31,7 +31,7 @@ const fizzBuzz1 = function(n) {
     return answer
 }
 
-// with IIFE
+// with nested IIFE
 const fizzBuzz2 = function(n) {
     
     const fizzNum = 3

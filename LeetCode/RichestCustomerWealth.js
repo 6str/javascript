@@ -7,10 +7,10 @@
  * @param {number[][]} accounts
  * @return {number}
  */
- var maximumWealth = function(accounts) {
-    var maxWealth = 0;
+ const maximumWealth = function(accounts) {
+    let maxWealth = 0;
     accounts.forEach((accountHolder) => {
-       var runningTotal = 0;
+       let runningTotal = 0;
        accountHolder.forEach((account) => {
            runningTotal += account
        })

@@ -14,8 +14,8 @@
  * @param {number} maxDoubles
  * @return {number}
  */
- var minMoves = function(target, maxDoubles) {
-    var [runningTotal, steps, halves] = [target, 0, 0]
+ const minMoves = function(target, maxDoubles) {
+    let [runningTotal, steps, halves] = [target, 0, 0]
 
     // figure out the best bang for buck doubles by working backwards from the target and halving the biggest numbers
     // until halves/doubles used up (or runningTotal hits < 2). the rest must then be reached by increments/decrements

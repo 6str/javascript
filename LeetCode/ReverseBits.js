@@ -12,7 +12,9 @@
  * @return {number} - a positive integer
  */
 
-var reverseBits = function(n) {
+const reverseBits = function(n) {
     return parseInt([...n.toString(2).padStart(32,'0')].reverse().join(''), 2)
-};``
+};
 
+console.log(reverseBits(00000010100101000001111010011100))
+console.log(reverseBits(11111111111111111111111111111101))

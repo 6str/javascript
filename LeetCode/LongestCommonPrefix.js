@@ -20,7 +20,7 @@
  * @param {string[]} strs
  * @return {string}
  */
-var longestCommonPrefix = function(strs) {
+const longestCommonPrefix = function(strs) {
 
     let len = Math.min(...strs.map(word => word.length))
     console.log(len)

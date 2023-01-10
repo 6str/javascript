@@ -18,8 +18,8 @@
  * @param {number} n - a positive integer
  * @return {number}
  */
-var hammingWeight = function(n) {
-    var n = parseInt(n, 2)  // convert binary string number
+const hammingWeight = function(n) {
+    n = parseInt(n, 2)  // convert binary string number
 
     // check for edge case: bit 32 set to 1
     if(n > (2 ** 31) -1) {
@@ -36,36 +36,25 @@ var hammingWeight = function(n) {
   return numOf1Bits
 };
 
-console.log( 2 ** 32)
-//4,294,967,296
-console.log( (2 ** 32).toString(2))
-//100000000000000000000000000000000
-console.log( (2 ** 32 -1).toString(2))
-//11111111111111111111111111111111
-console.log("11111111111111111111111111111111".length)
-
-console.log( (2 ** 32 -1).toString(2))
-
-console.log("check:", hammingWeight("111111111111111111111111111111"))
-//1 0000 0000 0000 0000 0000 0000 0000 0000
-console.log( (2 ** 32 -1).toString(2))
 
 
-let bits = (2 ** 31 -1).toString(2)
-console.log(bits, bits.length)
+const scratchpad = () => {
+    console.log( '2 ** 32:', 2 ** 32)
+    //4,294,967,296
 
-// 2 ** 32
-// 100000000000000000000000000000000 (33 bits)
+    console.log( (2 ** 32).toString(2) )
+    //100000000000000000000000000000000
+    console.log( "(2 ** 32 -1).toString(2):", (2 ** 32 -1).toString(2) )
+    //11111111111111111111111111111111
+    console.log( "length:", (2 ** 32 -1).toString(2).length )
+    
+
+    console.log( "(2 ** 32 -1).toString(2):", (2 ** 32 -1).toString(2) )
+    console.log("check:", hammingWeight("111111111111111111111111111111"))
+    //1 0000 0000 0000 0000 0000 0000 0000 0000
+}
 
 
-
-
-
-console.log(bits31.length, bits31)
-console.log( (2 ** 31 -1).toString(2))
-
-
-console.log("10000000000000000000000000000000".length)
 console.log("test case 1:   ", hammingWeight("00000000000000000000000000000000"))
 console.log("test case 2:   ", hammingWeight("10000000000000000000000000000000"))
 console.log("test case 3:   ", hammingWeight("11111111111111111111111111111111"))
