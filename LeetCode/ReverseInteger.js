@@ -9,13 +9,13 @@
  * @param {number} x
  * @return {number}
  */
-var reverse = function(x) {
+const reverse = function(x) {
 
     let y = x.toString()
 
     if(y[0] == '-') y = '-' + [...y].slice(1).reverse().join('')
     else  y = [...y].reverse().join('')
-    // console.log(y)
+
     if(Math.abs(y) > Math.pow(2, 31) -1) return 0    
 
     return parseInt(y)
