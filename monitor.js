@@ -2,9 +2,9 @@
 
 require("dotenv").config();
 const NODE_URL = process.env.NODE_URL
-var ethers = require('ethers');
-var url = NODE_URL;
-var provider = new ethers.providers.JsonRpcProvider(url);
+let ethers = require('ethers');
+let url = NODE_URL;
+let provider = new ethers.providers.JsonRpcProvider(url);
 
 const TARGET_ADDRESS1 = "0x3C283D39436c8F5B48E84740e938C745a45c2Ab1";
 const TARGET_ADDRESS2 = "0x0eE4A43F8E4eaf59886E1118f61c919F9815f59B";

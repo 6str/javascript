@@ -1,7 +1,7 @@
   
   // sleep using a loop. probably spikes cpu and bad form but can be used outside of a function
   function sleepWithLoop(milliseconds) {
-    var start = new Date().getTime();
+    let start = new Date().getTime();
     while (new Date().getTime() - start <= milliseconds){
     }
   }
@@ -14,7 +14,7 @@
   // sleep with promise and async / wait. must be called from inside an async function due to JavaScript being asynchronous, only the function code is waiting
   const sleepNow = ms => new Promise((resolve) => setTimeout(resolve, ms))
 
-  var anonFunc = async () => {
+  let anonFunc = async () => {
     console.log("before sleepWithPromise async/wait")
     await sleepNow(2000);
     console.log("after sleepWithPromise async/wait")

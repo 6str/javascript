@@ -21,9 +21,9 @@ console.log(obj2.id, obj2.name, obj2.country)
 //  * @returns {constructor} Constructor for the new struct
 //  */
  function makeStruct(names) {
-    var names = names.split(', ');
+    let names = names.split(', ');
     function constructor() {
-      for (var i = 0; i < names.length; i++) {
+      for (let i = 0; i < names.length; i++) {
         this[names[i]] = arguments[i];
       }
     }
