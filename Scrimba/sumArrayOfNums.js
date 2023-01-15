@@ -14,7 +14,7 @@ Example output: 6
 const studentCount = [50,53,61,67,60,70,78,80,80,81,90,110];
 
 
-const sumArray = (arr) => arr.reduce((acc, num) => acc + num)
+const sumArray = (arr) => arr.reduce((acc, num) => acc + num, 0)
 
 function sumArray2(arr) {
     let sum = 0
