@@ -3,11 +3,10 @@
 
 let distribution = {}
 let [min, max, iterations] = [1, 10, 10000000]
-for(let i =min; i <= max; ++i) distribution[i] =0
 
 for(let i=0; i < iterations; ++i) {
     let randNum = Math.floor(Math.random() * max) +1
-    ++distribution[randNum]
+    ++distribution[randNum] || (distribution[randNum] = 1)
 }
 
 console.log(distribution)
